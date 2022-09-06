@@ -1,0 +1,686 @@
+@font-face {
+    font-family: myfontregular;
+    src: url(./data/proxima/ProximaNova-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: myfontbold;
+    src: url(./data/proxima/Proxima\ Nova\ Bold.otf) format("opentype");
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfontregular;
+    color: #4c525a;
+    /* border: 1px solid black; */
+}
+
+.container {}
+
+.btn {
+    color: #00b289;
+    border: 1px solid #00b289;
+    padding: 12px 20px;
+    border-radius: 5px;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+/* --------------- Header ----------------- */
+
+#header .header .right-nav-bar a {
+    text-decoration: none;
+}
+
+#header {
+    /* position: fixed; */
+}
+
+#header .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 20px 0px;
+    position: fixed;
+    z-index: 3;
+}
+
+#header .logo {
+    padding: 0px 70px;
+    padding-top: 5px;
+}
+
+#header .logo img {
+    width: 9.3rem;
+    height: auto;
+    margin-top: 0px;
+}
+
+#header .header .left-nav-bar {}
+
+#header .header .left-nav-items {
+    list-style: none;
+    display: flex;
+}
+
+#header .header .left-nav-items .fa-chevron-down {
+    font-size: 0.7rem;
+    padding-left: 0.2rem;
+}
+
+#header .header .left-nav-items li {
+    padding: 10px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#header .header .product-dropdown {
+    position: relative;
+}
+
+#header .header .product-dropdown-data-div {
+    position: absolute;
+    top: 2.6rem;
+    left: -8rem;
+    background-color: white;
+    min-width: 23rem;
+    padding: 2rem 2rem;
+    padding-top: 0.5rem;
+    box-shadow: 0px 0px 3px 0px #4c525a;
+    display: none;
+}
+
+.product-dropdown:hover .product-dropdown-data-div {
+    display: block !important;
+}
+
+.product-dropdown-data-div:hover .product-dropdown-data-div{
+    display: block;
+}
+
+#header .header .product-dropdown-data-div .product-dropdown-items {
+    padding: 0rem 1rem;
+}
+#header .header .product-dropdown-data-div h2 {
+    padding-top: 2.5rem;
+    
+}
+#header .header .product-dropdown-data-div p {
+    padding: 0.5rem 0rem;
+    padding-bottom: 2rem;
+}
+#header .header .product-dropdown-data-div hr {
+    padding: 0rem 0rem;
+    color: #4c525a;
+    opacity: 0.3;
+}
+/* ------Templates Dropdown ------*/
+#header .header .templates-dropdown {
+    position: relative;
+}
+
+#header .header .templates-dropdown-data-div {
+    position: absolute;
+    top: 2.6rem;
+    left: 0rem;
+    background-color: white;
+    min-width: 23rem;
+    padding: 2rem 2rem;
+    padding-top: 0.5rem;
+    box-shadow: 0px 0px 3px 0px #4c525a;
+    display: none;
+}
+
+.templates-dropdown:hover .templates-dropdown-data-div {
+    display: block !important;
+}
+
+.templates-dropdown-data-div:hover .templates-dropdown-data-div{
+    display: block;
+}
+
+#header .header .templates-dropdown-data-div .product-dropdown-items {
+    padding: 0rem 1rem;
+}
+#header .header .templates-dropdown-data-div h2 {
+    padding-top: 1rem;
+    
+}
+#header .header .templates-dropdown-data-div p {
+    padding: 0.3rem 0rem;
+}
+#header .header .templates-dropdown-data-div hr {
+    padding: 0rem 0rem;
+    color: #4c525a;
+    opacity: 0.3;
+}
+/* ------Templates Dropdown ------*/
+
+#header .header .right-nav-bar {
+    padding: 0px 50px 0px 0px;
+}
+
+#header .header .right-nav-bar a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    border: 1px solid #00b289;
+    padding: 12px 20px;
+    margin: 0px 10px;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#header .header .right-nav-bar .header-login-btn {
+    color: #00b289;
+    border: 1px solid #00b289;
+    padding: 11px 20px;
+    border-radius: 5px;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+#header .header .right-nav-bar .header-trial-btn {
+    padding: 11px 30px;
+    background-color: #00b289;
+    color: white;
+}
+
+/* --------------- End Header ----------------- */
+
+
+/* --------------- Pice & Plans ----------------- */
+
+#priceplans {
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+.background-blue-cover {
+    height: 70%;
+    width: 90%;
+    top: -17rem;
+    left: 17.5rem;
+    position: absolute;
+    background-color: #f2fafd;
+    z-index: -1;
+    transform: rotate(-20deg);
+}
+
+.priceplans-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+    padding-top: 10rem;
+    position: relative;
+}
+
+.heading-txt-planspricing {
+    font-size: 2.2rem;
+    padding-right: 0rem;
+}
+
+.heading-txt-monthly {
+    padding-left: 6rem;
+    padding-right: 2rem;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.heading-txt-yearly {
+    padding-left: 2rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    opacity: 0.7;
+    letter-spacing: 0.1rem;
+}
+
+.heading-2month-free-img {
+    top: 8rem;
+    right: 22rem;
+    position: absolute;
+
+}
+
+#priceplans .priceplans {
+    display: flex;
+    flex-direction: row;
+    padding: 0 8rem;
+    margin: 3rem 0;
+    justify-content: space-between;
+}
+
+
+/* -------- Toggle ---------- */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    color: #00b289;
+    opacity: 1;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00b289;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #00b289;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #00b289;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* -------- End Toggle ---------- */
+
+#priceplans .plan {
+    display: flex;
+    flex-direction: column;
+    max-width: 21.5rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px lightgray;
+    padding: 80px 40px 65px 40px;
+    position: relative;
+    max-height: 1100px;
+    overflow: hidden;
+}
+
+#priceplans p {
+    display: inline-block;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+#priceplans .plan .plan-title {
+    font-size: 1.7rem;
+    padding-bottom: 5px;
+    letter-spacing: 1.5px;
+}
+
+#priceplans .plan .price-div {
+    border-bottom: 2px solid #00b289;
+    padding: 10px 0px;
+    height: 5.5rem;
+    margin-top: 20px;
+    position: relative;
+}
+
+#priceplans .plan .price-div .currency {
+    font-size: 1.8rem;
+    font-weight: 400;
+    top: 0.5rem;
+    left: 0;
+    color: #4c525a;
+    position: absolute;
+}
+
+#priceplans .plan .price-div .price {
+    font-size: 4rem;
+    font-weight: 600;
+    top: 0;
+    left: 1.8rem;
+    color: #4c525a;
+    position: absolute;
+}
+
+#priceplans .plan .price-div .period {
+    font-size: 1.6rem;
+    font-weight: 500;
+    top: 3rem;
+    left: 7.3rem;
+    color: #4c525a;
+    position: absolute;
+}
+#priceplans .plan .badge-position  {
+    position: relative;
+}
+#priceplans .plan .popular-badge p {
+    color: white; 
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+
+}
+#priceplans .plan .popular-badge {
+    background-color: #00b289;
+    text-align: center;
+    padding: 0.7rem;
+    position: absolute;
+    top: -1.9rem;
+    left: 4.5rem;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: 2;
+}
+
+#priceplans .plan ul {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+#priceplans .plan ul li {
+    padding: 10px 10px 10px 0px;
+    font-size: 1.0rem;
+    letter-spacing: 0.5px;
+    display: flex;
+}
+
+#priceplans .plan ul li img {
+    padding: 0px 10px 0px 0px;
+    height: 0.5rem;
+    align-self: center;
+}
+
+#priceplans .plan .plan-big-btn-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: auto;
+
+}
+
+#priceplans .plan .plan-big-btn-div .plan-big-btn {
+    background-color: #00b289;
+    font-size: 0.9rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1.4rem 0rem;
+    text-transform: uppercase;
+    /* align-self:flex-end; */
+}
+
+/* --------------- End Price & Plans ----------------- */
+
+#addons {}
+
+#addons .addons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#addons .addons .addons-heading h1 {
+    font-size: 2rem;
+    margin: 4rem;
+}
+
+#addons .addons .addons-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#addons .addons .addons-cards .addons-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 2px 0px 5px grey;
+    margin: 1rem 8rem;
+    padding: 2rem 5rem 2rem 3rem;
+}
+
+#addons .addons .addons-cards .addons-card .addon-card-text {
+    line-height: 2rem;
+}
+
+#addons .addons .addons-cards .addons-card .addon-card-text a {
+    line-height: 2rem;
+    color: #00b289;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#addons .addon-card-text a span {
+    color: #00b289;
+    transition: .2s ease;
+
+}
+
+#addons .addon-card-text a:hover span {
+    padding-left: 0.3rem;
+}
+
+#addons .addons .addons-cards .addons-card .addon-card-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    /* font-size: 1rem; */
+    /* font-family: myfontbold; */
+    /* font-weight: bold; */
+}
+
+#addons .addons .addons-cards .addons-card .addon-card-price h1 {
+    align-self: center;
+    padding: 0.5rem 0;
+}
+
+/* ---------------- End Addons -------------- */
+
+/* ---------------- Advertise -------------- */
+#advertise .advertise {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F2FAFF;
+    opacity: 1;
+    padding: 4rem 3rem;
+    margin: 10rem 13rem;
+}
+
+#advertise .advertise .adv-txt {
+    font-size: 2.7rem;
+    line-height: 4rem;
+}
+
+#advertise .advertise .adv-txt span {
+    color: #00b289;
+    font-size: 2.5rem;
+}
+
+#advertise .advertise .adv-btn-div {
+    align-self: center;
+    text-transform: uppercase;
+}
+
+#advertise .advertise .adv-btn {
+    color: white;
+    background-color: #00b289;
+    padding: 1rem 2rem;
+}
+
+/* ---------------- End Advertise -------------- */
+
+/* ---------------- FAQ -------------- */
+#faq .faq {
+    margin: 1rem 14rem;
+    padding: 2rem 4rem;
+}
+
+#faq .faq .faq-heading {
+    /* text-transform: uppercase; */
+    color: #00b289;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    /* font-weight: 800; */
+    letter-spacing: 0.05rem;
+}
+
+#faq .faq .faq-ques-ans .faq-single-box {
+    margin-top: 1.5rem;
+}
+
+#faq .faq .faq-ques-ans .faq-single-box .faq-ques {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 0rem 0rem;
+    cursor: pointer;
+}
+
+#faq .faq .faq-ques-ans .faq-single-box .faq-ques .first-faq {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 0.7rem 0rem;
+}
+
+#faq .faq .faq-ques-ans .faq-single-box .faq-ques .fa-chevron-down {
+    padding: 0.7rem 0rem;
+    width: 2rem;
+    color: #4c525a;
+    opacity: 0.7;
+}
+#faq .faq .faq-ques-ans .faq-checkboxes {
+    display: none;
+}
+#faq .faq .faq-ques:hover > h1  {
+    color: #00b289 ;
+}
+
+#faq .faq .faq-ques-ans .faq-single-box .faq-ans-div {
+    line-height: 1.5rem;
+}
+
+.faq-ans-div {
+    display: none;
+    overflow: hidden;
+}
+
+.faq-checkboxes:checked ~ .faq-ans-div {
+    display: block;
+}
+
+/* ---------------- End FAQ -------------- */
+
+
+
+/* ----------------  Footer -------------- */
+#footer .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4rem 0rem 6rem 0rem;
+}
+
+#footer .footer .c {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-width: 19rem;
+    padding: 0rem 0rem;
+}
+
+#footer  .footer .c1 {
+    min-width: 12rem;
+    padding-left: 8rem;
+    padding-right: 0rem;
+} 
+#footer  .footer .c2 {
+    min-width: 21rem;
+    padding-right: 2rem;
+    margin-left: 12rem;
+} 
+#footer  .footer .c3 {
+    padding-right: 2rem;
+    margin-right: 2rem;
+}  
+    #footer .footer ul{
+    
+    list-style-type: none;
+}
+
+#footer .footer ul li{
+    padding: 0.4rem 0;
+}
+#footer .footer ul li a {
+    text-decoration: none;
+}
+#footer .footer ul li .pricing-span {
+    color: #00b289;
+}
+#footer .footer .c h2{
+    padding: 2rem 0;
+}
+#footer .footer .child-uls li {
+    padding-left: 1rem;
+}
+#footer .footer .child-uls {
+    display: none;
+}
+.footer-checkboxes {
+    display: none;
+}
+#footer .footer .drop-down-li {
+    cursor: pointer;
+}
+
+.footer-checkboxes:checked ~ .child-uls {
+    display: block !important;
+}
+#footer .footer .fa-chevron-down {
+    padding-left: 0.1rem;
+    font-size: 0.8rem;
+}
+
+
+/* ----------------  End Footer -------------- */
+
+
